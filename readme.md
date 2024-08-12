@@ -71,5 +71,14 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 
 ```
+8. 加速访问
 
 
+绕过DNS域名解析会明显提高速度
+
+9. 明文保存密码
+因为国内网络问题,ssh之类的方法不好用,所以下下策明文保存
+```shell
+git config --global credential.helper store
+
+```
