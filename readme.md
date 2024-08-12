@@ -59,6 +59,17 @@ git push -u origin master
 6. 添加密钥
 如果真是从零开始,push是不能推送成功的,因为电脑不知道这是不是你的账号.
 生成私钥和公钥,公钥放在github上,私钥放在本地电脑的~/.ssh
+参考文献:
+www.cnblogs.com/liyan-blogs/p/15153764.html
 
+
+7. 修改为https上传
+```shell
+git remote set-url origin https.......(仓库的htpps地址)
+
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+```
 
 
