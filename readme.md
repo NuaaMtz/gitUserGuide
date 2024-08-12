@@ -40,5 +40,25 @@ git comment -m "This is comments for this version"
 忽略某些文件/文件夹:在根目录下创建.gitignore文件,在里面填写忽视的文件文件
 文件夹要以/开头
 
+5. 远程仓库
+远程仓库就是在前面的过程后面再加一个网络的分支
+首先是要先在github上创建仓库
+然后将本地的分支关联到远程的分支,网络的仓库一般习惯性认为设置为origin,来源,一看就是远程的仓库
+```shell
+git remote add origin git@github.com:michaelliao/learngit.git
+
+```
+最后将本地仓库的文件推送到远程仓库,我们上面所说,默认生成的分支名为:master
+
+```shell
+git push -u origin master
+
+```
+首次运行加上u参数,是为了完成关联,之后可以不需要加参数
+
+6. 添加密钥
+如果真是从零开始,push是不能推送成功的,因为电脑不知道这是不是你的账号.
+生成私钥和公钥,公钥放在github上,私钥放在本地电脑的~/.ssh
+
 
 
